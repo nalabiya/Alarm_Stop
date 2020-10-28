@@ -30,10 +30,6 @@ public class Alarm extends BroadcastReceiver {
         ringtone.setAudioAttributes(audioAttributes);
         ringtone.play();
 
-        //Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
-        //final Ringtone ringtone = RingtoneManager.getRingtone(context.getApplicationContext(),notification);
-        //ringtone.play();
-
         Utility.ringtoneHelper = new RingtoneHelper() {
             @Override
             public void stopRingtone() {
@@ -42,7 +38,6 @@ public class Alarm extends BroadcastReceiver {
                 }
             }
         };
-
     }
 }
 
